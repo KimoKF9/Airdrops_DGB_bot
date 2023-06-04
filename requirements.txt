@@ -1,4 +1,4 @@
-android==1.0
+
 APScheduler==3.6.3
 astroid==2.8.2
 audiostream==0.2
