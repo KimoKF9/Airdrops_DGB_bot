@@ -3,7 +3,7 @@ import dataBase
 from telebot import types
 from telegram import ParseMode
 #token connect
-kf9=('5505740829:AAGUcPX7mo4MxV9riN9JzYwQVRQARAntPss')
+kf9=('token bot in telegram. api')
 bot=telebot.TeleBot(kf9)
 db = dataBase.DataBase()
 db.createEventsTable()
