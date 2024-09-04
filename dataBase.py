@@ -2,7 +2,7 @@ import sqlite3
 
 class DataBase:
 
-    #creates a user database and sets a connection
+    #creates a user database and sets a connection.
     def __init__(self):
         self.connection = sqlite3.connect("dgb_data.db",check_same_thread=False)
         self.cursor = self.connection.cursor()
