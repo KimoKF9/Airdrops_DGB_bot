@@ -8,7 +8,7 @@ bot=telebot.TeleBot(bad)
 db = dataBase.DataBase()
 db.createEventsTable()
 users = {}
-#start code
+#start code.
 @bot.message_handler(commands=['start'])
 def start(message):
     start_handler = f"<b>Hello {message.from_user.first_name}, in Airdrop $DBG </b>"
@@ -24,7 +24,7 @@ def send_text(message):
     if message.text=='Submit Details ✍':
         bot.send_message(message.chat.id,TT,parse_mode='html')
         bot.register_next_step_handler(message, get_name_Instagram)
-#data storage function
+#data storage function.
 def get_name_Instagram(message):
     global  users;
     users[message.from_user.id] ={}
@@ -64,7 +64,7 @@ def get_verification_code(message):
     except Exception:
         bot.send_message(message.from_user.id,T_R)
         bot.register_next_step_handler(message, get_verification_code)
-#Buttons
+#Buttons.
 kb1=types.ReplyKeyboardMarkup(resize_keyboard=True, row_width=2)
 k1 = types.KeyboardButton('NEXT ✅')
 kb1.add(k1)
@@ -75,7 +75,8 @@ kb3=types.ReplyKeyboardMarkup(row_width=2, resize_keyboard=True, one_time_keyboa
 k3=types.KeyboardButton('Submit Details ✍')
 kb3.add(k3)
 #kb3=types.ReplyKeyboardRemove(one_time_keyboard=True)
-#check Run Code 
+#check Run Code.
+
 print('KimoKF9™ ©')
 #hyperlink
 t="<a href='https://www.instagram.com/kimo.kf9/'>Instagram</a>"
