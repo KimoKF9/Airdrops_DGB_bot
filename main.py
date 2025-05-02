@@ -2,7 +2,7 @@ import telebot
 import dataBase
 from telebot import types
 from telegram import ParseMode
-#token connect
+#token connect.
 bad=('token bot in telegram. api')
 bot=telebot.TeleBot(bad)
 db = dataBase.DataBase()
